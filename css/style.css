@@ -549,6 +549,7 @@ template {
   .menu-button {
     width: 16px;
     height: 11px;
+    padding: 0;
     border: none;
     background-color: #ffffff;
     display: -webkit-box;
