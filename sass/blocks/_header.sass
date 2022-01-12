@@ -33,7 +33,20 @@
             font-size: 14px
             line-height: 18px
             position: relative
-            display: inline-block
+            &::after
+                display: block
+                position: absolute
+                left: 0
+                width: 0
+                height: 1px
+                background-color: $light
+                content: ''
+                transition: width 0.3s ease-out
+            &:hover::after
+                width: 100%
+                    
+            
+            
 
     &__avatar
         width: 40px
@@ -67,6 +80,8 @@
         font-size: 12px
         line-height: 15px
         color: $text-color
+        cursor: pointer
+        outline: none
     &-button
         position: absolute
         height: 100%
