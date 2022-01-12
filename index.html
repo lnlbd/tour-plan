@@ -9,6 +9,7 @@
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;700;800&display=swap"
         rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,14 +26,14 @@
 
                 <form action="#" class="search header__search">
                     <input type="text" class="search__input" value="Search Location">
-                    <button class="search__button">
+                    <button class="search-button pointer">
                         <img src="img/search.svg" alt="icon: Search">
                     </button>
                 </form>
 
                 <a class="header__user">
                     <img 
-                    class="header__avatar"
+                    class="header__avatar pointer"
                     src="img/user-avatar.jpg" 
                     alt="Avatar: Nathan"
                     />
@@ -126,8 +127,46 @@
                 <!-- /.hotel-info__rating -->
             </div>
             <!-- /.hotel-info -->
+            <div class="hotel-grid">
+                <div class="slider">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img 
+                                class="swiper-slide__img"
+                                src="img/hotel-picture1.jpg" 
+                                alt="Picture: Grand Hilton Hotel">
+                            </div>
+                            <div class="swiper-slide">
+                                <img 
+                                class="swiper-slide__img"
+                                src="img/hotel-picture2.jpg" 
+                                alt="Picture: Grand Hilton Hotel">
+                            </div>
+                            <div class="swiper-slide">
+                                <img 
+                                class="swiper-slide__img"
+                                src="img/hotel-picture3.jpg" 
+                                alt="Picture: Grand Hilton Hotel">
+                            </div>
+                        </div>
+
+                        <!-- If we need navigation buttons -->
+                        <button class="slider-button slider-button--prev"></button>
+                        <button class="slider-button slider-button--next"></button>
+                    <!-- swiper -->
+                    </div>
+                </div>
+                <!-- /.slider -->
+            </div>
+            <!-- /.hotel-grid -->
         </div>
         <!-- /.container -->
     </section>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
